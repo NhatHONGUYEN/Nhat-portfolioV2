@@ -7,7 +7,7 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className="flex justify-between p-4 ">
+    <div className="flex justify-between p-4 shadow-sm">
       <p className="text-lg font-bold">NHAT</p>
       <div ref={node}>
         <Burger open={open} setOpen={setOpen} />
