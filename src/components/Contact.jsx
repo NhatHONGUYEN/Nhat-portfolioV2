@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="w-full h-full justify-center items-center text-center">
       <div>
-        <div className="py-8">
+        <div className="py-5 px-8 text-xl">
           <h1 className="font-bold">Contact</h1>
           <p className="font-bold text-orange-500">
             Si vous voulez en savoir plus!

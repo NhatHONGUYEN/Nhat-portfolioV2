@@ -6,7 +6,7 @@ export default function Menu({ open, setOpen }) {
       {open ? (
         <>
           <div className="w-full h-full bg-white fixed top-0 right-0 z-50 ">
-            <ul className="font-bold  h-screen flex flex-col items-center justify-center">
+            <ul className="font-bold text-xl  h-screen flex flex-col items-center justify-center">
               <li className="p-4">Home</li>
               <li className="p-4">About</li>
               <li className="p-4">Projects</li>
