@@ -1,8 +1,8 @@
 export default function Projects() {
   return (
-    <div className="w-full h-full block justify-center items-center text-center py-10 bg-gray-100 sm:px-40">
-      <h1 className="text-3xl font-bold  py-8">Projects</h1>
-      <div className="w-full h-full px-4 ">
+    <div className="block h-full w-full items-center justify-center bg-gray-100 py-10 text-center sm:px-40 lg:h-screen">
+      <h1 className="py-8 text-3xl  font-bold lg:py-28">Projects</h1>
+      <div className="h-full w-full px-4 lg:flex lg:h-screen lg:justify-center lg:gap-11  ">
         <div>
           <a
             href="https://crazee-burger-eosin-rho.vercel.app/"
@@ -10,11 +10,11 @@ export default function Projects() {
             rel="noopener noreferrer"
           >
             <img
-              className="rounded-xl  h-48 w-full object-cover"
+              className="h-48  w-full rounded-xl object-cover"
               src="/crazee-burger.png"
               alt="crazee-burger"
             />
-            <h2 className="font-bold py-5 text-xl">Crazee Burger</h2>
+            <h2 className="py-5 text-xl font-bold">Crazee Burger</h2>
             <p className="pb-10">Des burgers gourmands à portée de clic!</p>
           </a>
         </div>
@@ -25,11 +25,11 @@ export default function Projects() {
             rel="noopener noreferrer"
           >
             <img
-              className="rounded-xl h-48 w-full object-cover"
+              className="h-48 w-full rounded-xl object-cover"
               src="/Sushi-sensation.png"
               alt="Sushi-sensation"
             />
-            <h2 className="font-bold py-5 text-xl">Sushi Sensation</h2>
+            <h2 className="py-5 text-xl font-bold">Sushi Sensation</h2>
             <p className="pb-10">
               Résistez à la tentation... ou pas, nos sushis sont irrésistibles !
             </p>
@@ -42,11 +42,11 @@ export default function Projects() {
             rel="noopener noreferrer"
           >
             <img
-              className="rounded-xl h-48 w-full object-cover"
+              className="h-48 w-full rounded-xl object-cover"
               src="/netflix-port.png"
               alt="netflix-port"
             />
-            <h2 className="font-bold py-5 text-xl">Netflix clone</h2>
+            <h2 className="py-5 text-xl font-bold">Netflix clone</h2>
             <p className="pb-10">See what's next.</p>
           </a>
         </div>

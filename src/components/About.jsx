@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="block h-full w-full pt-10   lg:flex lg:h-screen lg:items-center lg:justify-center   ">
       <img
-        className="rounded-custom mx-auto h-full w-full sm:w-1/2 lg:ml-20 lg:h-[500px] lg:w-1/2"
+        className="   mx-auto h-full w-full sm:w-1/2 lg:ml-20 lg:h-[500px] lg:w-1/2"
         src="/photo-profil.jpg"
         alt="photo-profil"
       />
