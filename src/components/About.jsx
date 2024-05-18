@@ -1,13 +1,13 @@
 export default function About() {
   return (
-    <div className="w-full h-full block pt-10  ">
+    <div className="block h-full w-full pt-10   lg:flex lg:h-screen lg:items-center lg:justify-center   ">
       <img
-        className="w-full h-full sm:w-1/2 mx-auto rounded-custom"
+        className="rounded-custom mx-auto h-full w-full sm:w-1/2 lg:ml-20 lg:h-[500px] lg:w-1/2"
         src="/photo-profil.jpg"
         alt="photo-profil"
       />
-      <div className="block justify-center items-center text-center m-10 sm:mx-40">
-        <h2 className="text-xl font-bold py-4">ABOUT ME</h2>
+      <div className="m-10 block items-center justify-center text-center sm:mx-40 lg:mx-20">
+        <h2 className="py-4 text-xl font-bold">ABOUT ME</h2>
         <h1 className="text-2xl font-bold">
           Front-end Développeur basé sur Paris , France
         </h1>
