@@ -23,7 +23,21 @@ export default function Introduction() {
             constante de connaissances .
           </p>
           <p className="py-3 flex justify-center text-3xl ">
-            <IoLogoGithub /> <FaLinkedin className="ml-4" />
+            <a
+              href="https://github.com/NhatHONGUYEN"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IoLogoGithub />
+            </a>
+            <a
+              className="ml-4"
+              href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
           </p>
           <div className="my-10">
             <p className="font-bold">Tech Stack</p>
