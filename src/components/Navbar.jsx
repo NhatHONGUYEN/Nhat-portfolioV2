@@ -8,7 +8,7 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className="fixed flex h-[50px] w-full justify-between bg-white p-4 shadow-sm">
+    <div className="z-1000 flex h-[50px] w-full justify-between bg-white p-4  ">
       <Link
         to="/"
         className="z-1000 cursor-pointer text-lg font-bold"
