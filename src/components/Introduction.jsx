@@ -5,7 +5,7 @@ import { SiJavascript } from "react-icons/si";
 
 export default function Introduction() {
   return (
-    <div className="w-full h-full p-8 ">
+    <div className="w-full h-full pt-20 p-8 ">
       <div className="w-full h-full  block  ">
         <div className="text-3xl font-bold  ">
           <img

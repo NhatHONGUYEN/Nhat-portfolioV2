@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="w-full h-full block ">
+    <div className="w-full h-full block pt-10 ">
       <img src="/photo-profil.jpg" alt="photo-profil" />
       <div className="block justify-center items-center text-center m-10">
         <h2 className="text-xl font-bold py-4">ABOUT ME</h2>

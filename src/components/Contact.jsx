@@ -3,8 +3,8 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="w-full h-full justify-center items-center text-center">
-      <div>
+    <div className="w-full h-full block justify-center items-center text-center py-20  ;">
+      <div className="w-full h-full  ">
         <div className="py-5 px-8 text-xl">
           <h1 className="font-bold">Contact</h1>
           <p className="font-bold text-orange-500">
