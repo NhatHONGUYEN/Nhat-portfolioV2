@@ -3,9 +3,9 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className="w-full h-full block justify-center items-center text-center py-20  ;">
-      <div className="w-full h-full  ">
-        <div className="py-5 px-8 text-xl">
+    <div className=" block h-full w-full items-center justify-center py-20  text-center">
+      <div className="h-full w-full  ">
+        <div className="px-8 py-5 text-xl">
           <h1 className="font-bold">Contact</h1>
           <p className="font-bold text-orange-500">
             Si vous voulez en savoir plus!
@@ -13,23 +13,25 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="py-4">
-        <div className="flex justify-center items-center">
-          <FaPhoneAlt className="rounded-full bg-orange-500  text-xl" />
+      <div className="xl:flex xl:items-center xl:justify-center xl:gap-40">
+        <div className="py-4">
+          <div className="flex items-center justify-center ">
+            <FaPhoneAlt className="rounded-full bg-orange-500  text-xl" />
+          </div>
+          <p>
+            Phone <br />
+            07 69 57 74 67 69
+          </p>
         </div>
-        <p>
-          Phone <br />
-          07 69 57 74 67 69
-        </p>
-      </div>
-      <div className="pt-4 pb-10">
-        <div className="flex justify-center items-center ">
-          <CiMail className="rounded-full bg-orange-500 text-xl" />
+        <div className="pb-10 pt-4 xl:pb-4">
+          <div className="flex items-center justify-center ">
+            <CiMail className="rounded-full bg-orange-500 text-xl" />
+          </div>
+          <a href="mailto:hnnhat67@gmail.com">
+            Mail <br />
+            hnnhat67@gmail.com
+          </a>
         </div>
-        <a href="mailto:hnnhat67@gmail.com">
-          Mail <br />
-          hnnhat67@gmail.com
-        </a>
       </div>
     </div>
   );
