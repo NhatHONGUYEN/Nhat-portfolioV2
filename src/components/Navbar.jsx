@@ -8,17 +8,50 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className=" fixed  flex justify-between p-4 w-full h-[50px] shadow-sm bg-white">
+    <div className="fixed flex h-[50px] w-full justify-between bg-white p-4 shadow-sm">
       <Link
         to="/"
-        className="text-lg font-bold z-1000 cursor-pointer"
+        className="z-1000 cursor-pointer text-lg font-bold"
         onClick={() => (window.location.href = "/")}
       >
         NHAT
       </Link>
-      <div ref={node}>
+      <div className="hidden md:block">
+        <Link to="/" className="mx-4">
+          Home
+        </Link>
+        <Link to="/about" className="mx-4">
+          About
+        </Link>
+        <Link to="/projects" className="mx-4">
+          Projects
+        </Link>
+        <Link to="/contact" className="mx-4">
+          Contact
+        </Link>
+      </div>
+      <div ref={node} className="block md:hidden">
         <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen}>
+          <div className="mt-4 flex flex-col">
+            <Link to="/" className="mx-4" onClick={() => setOpen(false)}>
+              Home
+            </Link>
+            <Link to="/about" className="mx-4" onClick={() => setOpen(false)}>
+              About
+            </Link>
+            <Link
+              to="/projects"
+              className="mx-4"
+              onClick={() => setOpen(false)}
+            >
+              Projects
+            </Link>
+            <Link to="/contact" className="mx-4" onClick={() => setOpen(false)}>
+              Contact
+            </Link>
+          </div>
+        </Menu>
       </div>
     </div>
   );
