@@ -1,4 +1,4 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 
 export default function Footer() {
@@ -9,6 +9,7 @@ export default function Footer() {
         <div className="text-3xl  flex justify-center items-center py-4">
           <IoLogoGithub />
           <FaLinkedin />
+          <FaInstagram />
         </div>
       </div>
     </div>
