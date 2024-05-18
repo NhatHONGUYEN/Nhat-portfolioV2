@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="w-full h-full block justify-center items-center text-center py-10 bg-gray-100">
+    <div className="w-full h-full block justify-center items-center text-center py-10 bg-gray-100 sm:px-40">
       <h1 className="text-3xl font-bold  py-8">Projects</h1>
       <div className="w-full h-full px-4 ">
         <div>

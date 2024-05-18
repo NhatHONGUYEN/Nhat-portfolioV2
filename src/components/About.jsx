@@ -1,8 +1,12 @@
 export default function About() {
   return (
-    <div className="w-full h-full block pt-10 ">
-      <img src="/photo-profil.jpg" alt="photo-profil" />
-      <div className="block justify-center items-center text-center m-10">
+    <div className="w-full h-full block pt-10  ">
+      <img
+        className="w-full h-full sm:w-1/2 mx-auto rounded-custom"
+        src="/photo-profil.jpg"
+        alt="photo-profil"
+      />
+      <div className="block justify-center items-center text-center m-10 sm:mx-40">
         <h2 className="text-xl font-bold py-4">ABOUT ME</h2>
         <h1 className="text-2xl font-bold">
           Front-end Développeur basé sur Paris , France
