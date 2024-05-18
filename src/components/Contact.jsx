@@ -26,10 +26,10 @@ export default function Contact() {
         <div className="flex justify-center items-center ">
           <CiMail className="rounded-full bg-orange-500 text-xl" />
         </div>
-        <p>
+        <a href="mailto:hnnhat67@gmail.com">
           Mail <br />
           hnnhat67@gmail.com
-        </p>
+        </a>
       </div>
     </div>
   );
