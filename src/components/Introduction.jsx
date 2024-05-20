@@ -22,7 +22,7 @@ export default function Introduction() {
             Nhat-Quan HO NGUYEN, <br /> passionné de front-end et en quête
             constante de connaissances .
           </p>
-          <p className="flex justify-center py-3 text-3xl transition-all   lg:justify-normal lg:text-2xl 2xl:text-3xl ">
+          <p className="flex justify-center py-3 text-3xl transition-all   lg:justify-normal lg:text-2xl 2xl:text-4xl ">
             <a
               className=" duration-500 hover:-translate-y-5 hover:text-orange-400"
               href="https://github.com/NhatHONGUYEN"
@@ -42,7 +42,7 @@ export default function Introduction() {
           </p>
           <div className="my-10 ">
             <p className="font-bold 2xl:text-2xl">Tech Stack</p>
-            <div className=" flex justify-center p-4 text-3xl lg:justify-normal lg:p-0  lg:py-3 lg:text-2xl 2xl:py-10 2xl:text-3xl ">
+            <div className=" flex justify-center p-4 text-3xl lg:justify-normal lg:p-0  lg:py-3 lg:text-2xl 2xl:py-10 2xl:text-4xl ">
               <FaHtml5
                 className="ml-4 transition-all
                 duration-500

@@ -8,6 +8,7 @@ export default function Footer() {
         <div>Copyright © 2024 . All rights are reserved</div>
         <div className="flex  items-center justify-center py-4 text-3xl">
           <a
+            className=" transition-all duration-500 hover:-translate-y-5"
             href="https://github.com/NhatHONGUYEN"
             target="_blank"
             rel="noopener noreferrer"
@@ -15,6 +16,7 @@ export default function Footer() {
             <IoLogoGithub />
           </a>
           <a
+            className=" ml-4 transition-all duration-500 hover:-translate-y-5"
             href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
             target="_blank"
             rel="noopener noreferrer"
@@ -22,6 +24,7 @@ export default function Footer() {
             <FaLinkedin />
           </a>
           <a
+            className=" ml-4 transition-all duration-500 hover:-translate-y-5"
             href="https://www.instagram.com/nhatflux/"
             target="_blank"
             rel="noopener noreferrer"

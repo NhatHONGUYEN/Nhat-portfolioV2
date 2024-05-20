@@ -18,7 +18,7 @@ export default function Contact() {
           <div className="flex items-center justify-center ">
             <FaPhoneAlt className="2xl:text-2x rounded-full  bg-orange-500 text-xl" />
           </div>
-          <p className="2xl:text-xl ">
+          <p className=" 2xl:text-xl ">
             Phone <br />
             07 69 57 74 67 69
           </p>
@@ -27,9 +27,9 @@ export default function Contact() {
           <div className="flex items-center justify-center ">
             <CiMail className="2xl:text-2x rounded-full bg-orange-500 text-xl" />
           </div>
-          <a className="2xl:text-xl " href="mailto:hnnhat67@gmail.com">
+          <a className="2xl:text-xl  " href="mailto:hnnhat67@gmail.com">
             Mail <br />
-            hnnhat67@gmail.com
+            <span className="text-orange-500  "> hnnhat67@gmail.com</span>
           </a>
         </div>
       </div>
