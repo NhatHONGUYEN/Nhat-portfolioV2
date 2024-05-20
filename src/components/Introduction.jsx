@@ -6,7 +6,7 @@ import { SiJavascript } from "react-icons/si";
 export default function Introduction() {
   return (
     <div className=" h-full  w-full p-8 pt-20 lg:flex lg:h-screen lg:items-center lg:justify-center lg:px-20 lg:pt-[15%] xl:pl-20 xl:pr-40 xl:pt-20 2xl:px-0 2xl:pt-0 ">
-      <div className=" block h-full w-full  flex-row-reverse p-10 lg:flex lg:gap-10 xl:justify-center 2xl:h-[500px] 2xl:w-full 2xl:items-center  2xl:justify-center    2xl:p-0  ">
+      <div className=" block h-full w-full  flex-row-reverse p-10 lg:flex lg:gap-10 xl:justify-center 2xl:h-[500px] 2xl:w-[80%] 2xl:items-center  2xl:justify-center    2xl:p-0  ">
         <div className="lg: text-3xl font-bold   ">
           <img
             className="h-45 rounded-custom   mx-auto  block h-full bg-orange-400 sm:w-1/2 lg:h-[80%] lg:w-full  2xl:h-[500px] 2xl:w-auto"
