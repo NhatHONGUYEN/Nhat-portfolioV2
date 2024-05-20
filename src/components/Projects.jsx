@@ -37,7 +37,7 @@ export default function Projects() {
         </div>
         <div>
           <a
-            href="https://netflix-clone-k9aeneoof-nhat-quans-projects.vercel.app/"
+            href="https://netflix-clone-delta-gray.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
