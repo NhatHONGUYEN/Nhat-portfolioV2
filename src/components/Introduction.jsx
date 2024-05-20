@@ -22,8 +22,9 @@ export default function Introduction() {
             Nhat-Quan HO NGUYEN, <br /> passionné de front-end et en quête
             constante de connaissances .
           </p>
-          <p className="flex justify-center py-3 text-3xl lg:justify-normal  lg:text-2xl 2xl:text-3xl ">
+          <p className="flex justify-center py-3 text-3xl transition-all   lg:justify-normal lg:text-2xl 2xl:text-3xl ">
             <a
+              className=" duration-500 hover:-translate-y-5 hover:text-orange-400"
               href="https://github.com/NhatHONGUYEN"
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +32,7 @@ export default function Introduction() {
               <IoLogoGithub />
             </a>
             <a
-              className="ml-4  "
+              className="ml-4 duration-500 hover:-translate-y-5 hover:text-orange-400 "
               href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,12 +42,16 @@ export default function Introduction() {
           </p>
           <div className="my-10 ">
             <p className="font-bold 2xl:text-2xl">Tech Stack</p>
-            <div className=" flex justify-center p-4 text-3xl lg:justify-normal lg:p-0  lg:py-3 lg:text-2xl 2xl:text-3xl ">
-              <FaHtml5 className="ml-4  lg:ml-0" />
-              <IoLogoCss3 className="ml-4 " />
-              <SiJavascript className="ml-4 " />
-              <RiTailwindCssFill className="ml-4 " />
-              <FaReact className="ml-4" />
+            <div className=" flex justify-center p-4 text-3xl lg:justify-normal lg:p-0  lg:py-3 lg:text-2xl 2xl:py-10 2xl:text-3xl ">
+              <FaHtml5
+                className="ml-4 transition-all
+                duration-500
+                hover:-translate-y-5 hover:text-orange-400 lg:ml-0"
+              />
+              <IoLogoCss3 className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400  " />
+              <SiJavascript className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-orange-400" />
+              <RiTailwindCssFill className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400 " />
+              <FaReact className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400" />
             </div>
           </div>
         </div>
