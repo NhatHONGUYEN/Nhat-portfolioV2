@@ -8,10 +8,10 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className="z-1000 flex h-[50px] w-full justify-between bg-white p-4 2xl:h-[100px] 2xl:text-xl  ">
+    <div className=" flex  h-[50px] w-full items-center justify-between bg-white  p-4 2xl:h-[80px]   ">
       <Link
         to="/"
-        className="z-1000 cursor-pointer text-lg font-bold"
+        className="z-1000 cursor-pointer text-lg font-bold 2xl:text-3xl "
         onClick={() => (window.location.href = "/")}
       >
         NHAT

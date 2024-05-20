@@ -3,10 +3,10 @@ import { IoLogoGithub } from "react-icons/io";
 
 export default function Footer() {
   return (
-    <div className="w-full h-full bg-slate-600 ">
-      <div className="text-center px-7 py-16 text-white">
+    <div className="h-full w-full bg-slate-600 ">
+      <div className="px-7 py-16 text-center text-white 2xl:text-xl ">
         <div>Copyright © 2024 . All rights are reserved</div>
-        <div className="text-3xl  flex justify-center items-center py-4">
+        <div className="flex  items-center justify-center py-4 text-3xl">
           <a
             href="https://github.com/NhatHONGUYEN"
             target="_blank"
