@@ -3,7 +3,7 @@ export default function About() {
     <div className="h-full w-full">
       <div className="  block h-full   w-full  pt-10 lg:flex  lg:h-screen lg:items-center lg:justify-center  xl:px-40   2xl:ml-[15%]  2xl:w-[70%] 2xl:gap-10 2xl:pt-0  ">
         <img
-          className="     mx-auto h-full w-full sm:w-1/2 lg:ml-20 lg:h-[500px]  lg:w-1/2 2xl:ml-0  2xl:h-[500px] 2xl:w-auto "
+          className="mx-auto h-full w-full transform transition  duration-500 hover:rotate-12 hover:scale-[1.2] sm:w-1/2 lg:ml-20 lg:h-[500px]  lg:w-1/2 2xl:ml-0  2xl:h-[500px] 2xl:w-auto "
           src="/photo-profil.jpg"
           alt="photo-profil"
         />
