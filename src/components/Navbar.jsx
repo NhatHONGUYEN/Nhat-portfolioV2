@@ -8,7 +8,7 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className="z-1000 flex h-[50px] w-full justify-between bg-white p-4  ">
+    <div className="z-1000 flex h-[50px] w-full justify-between bg-white p-4 2xl:h-[100px] 2xl:text-xl  ">
       <Link
         to="/"
         className="z-1000 cursor-pointer text-lg font-bold"
@@ -16,7 +16,7 @@ export default function Navbar() {
       >
         NHAT
       </Link>
-      <div className="hidden md:block">
+      <div className="hidden md:block 2xl:text-xl">
         <Link to="/" className="mx-4">
           Home
         </Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
-      <div ref={node} className="block md:hidden">
+      <div ref={node} className="block md:hidden ">
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen}>
           <div className="mt-4 flex flex-col">
