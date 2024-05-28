@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <div className="relative bg-gray-900">
-      <div className="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+    <div className="relative bg-gray-900" id="about">
+      <div className="relative h-80 overflow-hidden pt-8 md:absolute  md:left-0 md:h-full md:w-1/3 md:pt-0 lg:w-1/2">
         <img
           className="h-full w-full object-contain"
-          src="../../public/photo-profil.jpg"
+          src="/photo-profil.jpg"
           alt=""
         />
       </div>

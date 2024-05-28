@@ -5,7 +5,7 @@ import { SiJavascript } from "react-icons/si";
 
 export default function Introduction() {
   return (
-    <div className="h-screen bg-white">
+    <div className="h-screen bg-white " id="introduction">
       <div className="relative isolate pt-14">
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -83,7 +83,7 @@ export default function Introduction() {
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow ">
             <img
-              src="../../public/blackclothesprofil2.png"
+              src="/blackclothesprofil2.png"
               alt=""
               className="max-h-96 w-auto object-cover"
             />
