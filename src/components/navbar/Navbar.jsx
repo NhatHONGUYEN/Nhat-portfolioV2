@@ -8,16 +8,16 @@ export default function Navbar() {
   const node = useRef();
 
   return (
-    <div className=" fixed z-50 flex h-[50px]  w-full  items-center justify-between bg-white p-4  shadow-sm 2xl:h-[80px]   ">
+    <div className="  fixed  z-50 flex h-[50px]  w-full  items-center justify-between bg-white p-4  shadow-sm 2xl:h-[80px]   ">
       <Link
         to="introduction"
         spy={true}
         smooth={true}
         offset={50}
         duration={500}
-        className="cursor-pointer text-lg font-bold  duration-500 hover:text-indigo-600  2xl:text-3xl "
+        className=" semi-bold cursor-pointer text-lg duration-500 hover:text-indigo-600  2xl:text-3xl "
       >
-        NHAT
+        NhAT
       </Link>
       <div className="hidden md:block 2xl:text-xl">
         <Link

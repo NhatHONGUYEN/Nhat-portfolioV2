@@ -5,7 +5,7 @@ import { SiJavascript } from "react-icons/si";
 
 export default function Introduction() {
   return (
-    <div className="h-screen bg-white " id="introduction">
+    <div className="h-screen bg-white  " id="introduction">
       <div className="relative isolate pt-14">
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
@@ -36,7 +36,7 @@ export default function Introduction() {
             fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
           />
         </svg>
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex"></div>
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
@@ -81,11 +81,11 @@ export default function Introduction() {
               </a>
             </div>
           </div>
-          <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow ">
+          <div className="mt-16 sm:mt-24 lg:ml-16  lg:flex-shrink-0 lg:flex-grow  ">
             <img
               src="/blackclothesprofil2.png"
-              alt=""
-              className="max-h-96 w-auto object-cover"
+              alt="blackclothesprofil2"
+              className="h-96 w-auto object-cover 2xl:h-[600px] "
             />
           </div>
         </div>

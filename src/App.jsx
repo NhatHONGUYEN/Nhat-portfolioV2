@@ -5,7 +5,7 @@ import Introduction from "./components/Introduction";
 import About from "./components/About";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
