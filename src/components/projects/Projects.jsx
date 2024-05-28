@@ -40,7 +40,7 @@ export default function Projects() {
                       <img
                         src={feature.imageSrc}
                         alt={feature.imageAlt}
-                        className="object-cover object-center"
+                        className=" object-cover object-center"
                       />
                     </div>
                   </a>
