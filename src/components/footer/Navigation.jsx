@@ -11,6 +11,8 @@ const Navigation = [
         />
       </svg>
     ),
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
 
   {
@@ -25,6 +27,8 @@ const Navigation = [
         />
       </svg>
     ),
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
 ];
 

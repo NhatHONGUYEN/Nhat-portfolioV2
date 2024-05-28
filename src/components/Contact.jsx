@@ -24,6 +24,8 @@ export default function Contact() {
                       <a
                         className="font-semibold text-indigo-600 2xl:text-xl"
                         href="mailto:hnnhat67@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         hnnhat67@gmail.com
                       </a>
@@ -31,7 +33,7 @@ export default function Contact() {
                   </div>
                   <div className="mt-1 2xl:text-xl">
                     <dt className="sr-only ">Phone number</dt>
-                    <dd>07 69 57 74 67</dd>
+                    <dd style={{ letterSpacing: "-2px" }}>07 69 57 74 67</dd>
                   </div>
                 </dl>
               </div>

@@ -9,6 +9,8 @@ export default function Footer() {
             <a
               key={item.name}
               href={item.href}
+              target={item.target}
+              rel={item.rel}
               className="text-gray-400 hover:text-gray-500 "
             >
               <span className="sr-only">{item.name}</span>

@@ -42,7 +42,7 @@ export default function Introduction() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl 2xl:text-7xl">
               Front-End React developer
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 2xl:text-xl">
+            <p className="mt-6 text-lg leading-8 text-gray-600 2xl:pt-12 2xl:text-xl">
               Nhat-Quan HO NGUYEN, passionné de front-end et en quête constante
               de connaissances
               <div className="flex pt-8 text-2xl 2xl:text-4xl">
