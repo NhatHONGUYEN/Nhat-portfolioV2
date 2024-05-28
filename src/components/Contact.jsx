@@ -23,7 +23,7 @@ export default function Contact() {
                     <dd>
                       <a
                         className="font-semibold text-indigo-600"
-                        href="mailto:collaborate@example.com"
+                        href="mailto:hnnhat67@gmail.com"
                       >
                         hnnhat67@gmail.com
                       </a>
