@@ -1,58 +1,92 @@
-import { FaHtml5, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaLinkedin, FaReact } from "react-icons/fa";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiJavascript } from "react-icons/si";
 
 export default function Introduction() {
   return (
-    <div className=" h-full  w-full  p-8 pt-20 lg:flex lg:h-screen lg:items-center lg:justify-center lg:px-20 lg:pt-[15%] xl:pl-20 xl:pr-40 xl:pt-20 2xl:bg-gray-100 2xl:px-0 2xl:pt-0  ">
-      <div className=" block h-full w-full  flex-row-reverse p-10 lg:flex lg:gap-10 xl:justify-center 2xl:h-[500px] 2xl:w-[80%] 2xl:items-center  2xl:justify-center    2xl:p-0  ">
-        <div className="lg: text-3xl font-bold   ">
-          <img
-            className="h-45 rounded-custom   mx-auto  block h-full bg-orange-400 sm:w-1/2 lg:h-[80%] lg:w-full  2xl:h-[500px] 2xl:w-auto"
-            src="/blackclothesprofil2.png"
-            alt="blackclothesprofil"
+    <div className="h-screen bg-white  " id="introduction">
+      <div className="relative isolate pt-14">
+        <svg
+          className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
+              width={200}
+              height={200}
+              x="50%"
+              y={-1}
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="M100 200V.5M.5 .5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+            <path
+              d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+              strokeWidth={0}
+            />
+          </svg>
+          <rect
+            width="100%"
+            height="100%"
+            strokeWidth={0}
+            fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
           />
-        </div>
-        <div className="  block items-center  justify-center text-center sm:mx-40 lg:mx-0 lg:w-[45%]  lg:text-ellipsis lg:text-left 2xl:w-[30%]  ">
-          <h1 className=" py-10 text-4xl font-bold lg:py-5 2xl:text-5xl   ">
-            Front-End React developer
-          </h1>
-          <p className="py-2 2xl:w-[80%] 2xl:py-8 2xl:text-xl ">
-            Nhat-Quan HO NGUYEN, <br /> passionné de front-end et en quête
-            constante de connaissances .
-          </p>
-          <p className="flex justify-center py-3 text-3xl transition-all   lg:justify-normal lg:text-2xl 2xl:text-4xl ">
-            <a
-              className=" duration-500 hover:-translate-y-5 hover:text-orange-400"
-              href="https://github.com/NhatHONGUYEN"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IoLogoGithub />
-            </a>
-            <a
-              className="ml-4 duration-500 hover:-translate-y-5 hover:text-orange-400 "
-              href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-          </p>
-          <div className="my-10 ">
-            <p className="font-bold 2xl:text-2xl">Tech Stack</p>
-            <div className=" flex justify-center p-4 text-3xl lg:justify-normal lg:p-0  lg:py-3 lg:text-2xl 2xl:py-10 2xl:text-4xl ">
-              <FaHtml5
-                className="ml-4 transition-all
-                duration-500
-                hover:-translate-y-5 hover:text-orange-400 lg:ml-0"
-              />
-              <IoLogoCss3 className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400  " />
-              <SiJavascript className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-orange-400" />
-              <RiTailwindCssFill className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400 " />
-              <FaReact className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-orange-400" />
+        </svg>
+        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40 ">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+            <div className="flex"></div>
+            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Front-End React developer
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Nhat-Quan HO NGUYEN, passionné de front-end et en quête constante
+              de connaissances
+              <div className="flex pt-8 text-2xl">
+                <a
+                  className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  "
+                  href="https://github.com/NhatHONGUYEN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IoLogoGithub />
+                </a>
+                <a
+                  className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  "
+                  href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+            </p>
+            <div className="mt-10 flex items-center gap-x-6">
+              <p className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ">
+                Tech Stack
+              </p>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                <div className=" flex text-2xl  leading-8 text-gray-600">
+                  <IoLogoCss3 className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  " />
+                  <SiJavascript className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 " />
+                  <RiTailwindCssFill className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 " />
+                  <FaReact className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  " />
+                </div>
+              </a>
             </div>
+          </div>
+          <div className="mt-16 sm:mt-24 lg:ml-16  lg:flex-shrink-0 lg:flex-grow  ">
+            <img
+              src="/blackclothesprofil2.png"
+              alt="blackclothesprofil2"
+              className="h-96 w-auto object-cover 2xl:h-[600px] "
+            />
           </div>
         </div>
       </div>
