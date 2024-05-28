@@ -84,3 +84,19 @@
     font-family: 'Rubik', sans-serif;
    
   }
+
+  .rounded-bl-70-40 {
+    border-bottom-left-radius: 70% 40%;
+  }
+  
+  .rounded-br-30-70 {
+    border-bottom-right-radius: 30% 70%;
+  }
+  
+  .rounded-tl-60 {
+    border-top-left-radius: 60%;
+  }
+  
+  .rounded-tr-40-30 {
+    border-top-right-radius: 40% 30%;
+  }

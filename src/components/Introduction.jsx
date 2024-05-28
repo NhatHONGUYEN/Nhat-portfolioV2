@@ -81,11 +81,11 @@ export default function Introduction() {
               </a>
             </div>
           </div>
-          <div className="mt-16 sm:mt-24 lg:ml-16  lg:flex-shrink-0 lg:flex-grow  ">
+          <div className=" mt-16 hidden sm:mt-24 md:block  lg:ml-16  lg:flex-shrink-0 lg:flex-grow   ">
             <img
               src="/blackclothesprofil2.png"
               alt="blackclothesprofil2"
-              className="h-96 w-auto object-cover 2xl:h-[600px] "
+              className=" rounded-tl-60 rounded-tr-40-30 rounded-bl-70-40 rounded-br-30-70  h-96 w-auto bg-indigo-600 object-cover  2xl:h-[600px] "
             />
           </div>
         </div>
