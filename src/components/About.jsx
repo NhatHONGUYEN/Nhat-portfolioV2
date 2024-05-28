@@ -10,13 +10,13 @@ export default function About() {
       </div>
       <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base font-semibold leading-7 text-indigo-400">
+          <h2 className="text-base font-semibold leading-7 text-indigo-400 2xl:text-3xl">
             ABOUT ME
           </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl 2xl:text-5xl">
             Front-end Développeur basé sur Paris , France
           </p>
-          <p className="mt-6 text-base leading-7 text-gray-300">
+          <p className="mt-6 text-base leading-7 text-gray-300 2xl:text-xl">
             En reconversion professionnelle, je suis passionné par le
             développement front-end et motivé pour apprendre et maîtriser les
             technologies web telles que HTML, CSS, JavaScript et React. Je suis

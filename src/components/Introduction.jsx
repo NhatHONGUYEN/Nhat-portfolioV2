@@ -39,15 +39,15 @@ export default function Introduction() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40 ">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex"></div>
-            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl 2xl:text-7xl">
               Front-End React developer
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-gray-600 2xl:text-xl">
               Nhat-Quan HO NGUYEN, passionné de front-end et en quête constante
               de connaissances
-              <div className="flex pt-8 text-2xl">
+              <div className="flex pt-8 text-2xl 2xl:text-4xl">
                 <a
-                  className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  "
+                  className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600   "
                   href="https://github.com/NhatHONGUYEN"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -55,7 +55,7 @@ export default function Introduction() {
                   <IoLogoGithub />
                 </a>
                 <a
-                  className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  "
+                  className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 2xl:text-4xl  "
                   href="https://www.linkedin.com/in/nhat-quan-ho-nguyen/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +65,7 @@ export default function Introduction() {
               </div>
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <p className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm ">
+              <p className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm 2xl:text-xl ">
                 Tech Stack
               </p>
               <a
@@ -73,10 +73,10 @@ export default function Introduction() {
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
                 <div className=" flex text-2xl  leading-8 text-gray-600">
-                  <IoLogoCss3 className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  " />
-                  <SiJavascript className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 " />
-                  <RiTailwindCssFill className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 " />
-                  <FaReact className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600  " />
+                  <IoLogoCss3 className=" transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 2xl:text-4xl  " />
+                  <SiJavascript className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 2xl:text-4xl " />
+                  <RiTailwindCssFill className="ml-4  transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 2xl:text-4xl " />
+                  <FaReact className="ml-4 transition-all duration-500 hover:-translate-y-5 hover:text-indigo-600 2xl:text-4xl  " />
                 </div>
               </a>
             </div>
