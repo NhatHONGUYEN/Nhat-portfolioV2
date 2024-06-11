@@ -36,11 +36,11 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className=" ml-60  cursor-pointer overflow-hidden rounded-lg bg-gray-100   ">
+                    <div className=" mx-16 cursor-pointer overflow-hidden  rounded-lg bg-gray-100  md:ml-60   ">
                       <img
                         src={feature.imageSrc}
                         alt={feature.imageAlt}
-                        className=" max-h-[500px] w-full transform object-cover object-center transition duration-500 hover:scale-110  "
+                        className=" h-52 w-full transform rounded-lg object-cover object-center transition duration-500 hover:scale-110 md:h-[500px] md:w-full"
                       />
                     </div>
                   </a>
