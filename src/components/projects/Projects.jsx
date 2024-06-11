@@ -40,7 +40,7 @@ export default function Projects() {
                       <img
                         src={feature.imageSrc}
                         alt={feature.imageAlt}
-                        className=" h-[500px] w-full transform object-cover object-center transition duration-500 hover:scale-110  "
+                        className=" max-h-[500px] w-full transform object-cover object-center transition duration-500 hover:scale-110  "
                       />
                     </div>
                   </a>

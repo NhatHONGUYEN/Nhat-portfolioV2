@@ -3,7 +3,7 @@ const Features = [
     name: "NHATFLIX",
     description:
       "Ce projet a été réalisé dans le cadre de mon entraînement en développement React et a permis de mettre en pratique mes compétences en création d'interfaces utilisateur esthétiques et interactives.",
-    imageSrc: "/public/NHATFLIX.jpg",
+    imageSrc: "/NHATFLIX.jpg",
     imageAlt: "NHATFLIX",
     href: "https://nhatflix.vercel.app/",
   },
