@@ -3,9 +3,9 @@ import { Features } from "./Features";
 export default function Projects() {
   return (
     <div className="bg-white" id="projects">
-      <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-        <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-          <div className="max-w-3xl">
+      <div className="mx-auto max-w-screen-xl py-24 sm:px-2 sm:py-32 lg:px-4">
+        <div className="mx-auto max-w-7xl px-4 lg:max-w-none">
+          <div className="max-w-7xl">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl 2xl:text-5xl">
               Projects
             </p>
@@ -20,13 +20,13 @@ export default function Projects() {
             {Features.map((feature) => (
               <div
                 key={feature.name}
-                className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 2xl:gap-x-24"
+                className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8 "
               >
                 <div className="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
                   <h3 className="text-lg font-medium text-gray-900 2xl:pt-4  2xl:text-3xl ">
                     {feature.name}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-500 2xl:pt-4 2xl:text-xl ">
+                  <p className="mt-2 max-w-6xl text-sm text-gray-500 2xl:pt-4 2xl:text-xl ">
                     {feature.description}
                   </p>
                 </div>
@@ -36,11 +36,11 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="aspect-h-2 aspect-w-5 cursor-pointer overflow-hidden rounded-lg bg-gray-100 2xl:h-1/2  ">
+                    <div className=" ml-60  cursor-pointer overflow-hidden rounded-lg bg-gray-100   ">
                       <img
                         src={feature.imageSrc}
                         alt={feature.imageAlt}
-                        className=" transform object-cover object-center transition duration-500 hover:scale-110 "
+                        className=" h-[500px] w-full transform object-cover object-center transition duration-500 hover:scale-110  "
                       />
                     </div>
                   </a>
