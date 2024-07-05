@@ -88,7 +88,7 @@ export default function Introduction() {
         <div className="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-40">
           <img
             alt=""
-            src="../../public/profilpic.png"
+            src="/profilpic.png"
             className="aspect-[3/2] w-full bg-transparent object-cover object-right-top lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
           />
         </div>
