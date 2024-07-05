@@ -1,33 +1,113 @@
+import videoPortFolio1 from "/Portfoliovideo (1).mp4";
+import videoPortFolio2 from "/Portfoliovideo (2).mp4";
+import videoPortFolio3 from "/Portfoliovideo (3).mp4";
+import videoPortFolio4 from "/Portfoliovideo (4).mp4";
+import videoPortFolio5 from "/Portfoliovideo (5).mp4";
+
 export default function About() {
   return (
-    <div className="h-full w-screen">
-      <div className="relative bg-gray-900" id="about">
-        <div className="relative h-80 overflow-hidden pt-8 md:absolute  md:left-0 md:h-full md:w-1/3 md:pt-0 lg:w-1/2">
-          <img
-            className="h-full w-full object-contain"
-            src="/photo-profil.jpg"
-            alt=""
-          />
+    <main>
+      <div className="relative isolate">
+        <svg
+          aria-hidden="true"
+          className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        >
+          {/* ... */}
+        </svg>
+        <div
+          aria-hidden="true"
+          className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+        >
+          {/* ... */}
         </div>
-        <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-          <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-            <h2 className="text-base font-semibold leading-7 text-indigo-400 2xl:text-3xl">
-              ABOUT ME
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl 2xl:text-5xl">
-              Front-end Développeur basé sur Paris , France
-            </p>
-            <p className="mt-6 text-base leading-7 text-gray-300 2xl:text-xl">
-              En reconversion professionnelle, je suis passionné par le
-              développement front-end et motivé pour apprendre et maîtriser les
-              technologies web telles que HTML, CSS, JavaScript et React. Je
-              suis ouvert aux opportunités de collaboration et de travail sur
-              des projets épanouissants. Contactez-moi pour discuter de vos
-              idées.
-            </p>
+        <div className="overflow-hidden">
+          <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:flex-row-reverse lg:items-center">
+              <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  ABOUT ME
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  En reconversion professionnelle, je suis passionné par le
+                  développement front-end et motivé pour apprendre et maîtriser
+                  les technologies web telles que HTML, CSS, JavaScript et
+                  React. Je suis ouvert aux opportunités de collaboration et de
+                  travail sur des projets épanouissants. Contactez-moi pour
+                  discuter de vos idées.
+                </p>
+              </div>
+              <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:flex-row-reverse lg:pl-0">
+                <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                  <div className="relative">
+                    <video
+                      alt=""
+                      src={videoPortFolio1}
+                      autoPlay
+                      loop
+                      muted
+                      controls={false}
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                </div>
+                <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                  <div className="relative">
+                    <video
+                      alt=""
+                      src={videoPortFolio2}
+                      autoPlay
+                      loop
+                      muted
+                      controls={false}
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                  <div className="relative">
+                    <video
+                      alt=""
+                      src={videoPortFolio3}
+                      autoPlay
+                      loop
+                      muted
+                      controls={false}
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                </div>
+                <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                  <div className="relative">
+                    <video
+                      alt=""
+                      src={videoPortFolio4}
+                      autoPlay
+                      loop
+                      muted
+                      controls={false}
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                  <div className="relative">
+                    <video
+                      alt=""
+                      src={videoPortFolio5}
+                      autoPlay
+                      loop
+                      muted
+                      controls={false}
+                      className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    />
+                    <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
