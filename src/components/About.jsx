@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <main>
-      <div className="bg-slate-50-50 relative isolate h-full w-full">
+      <div id="about" className="bg-slate-50-50 relative isolate h-full w-full">
         <div
           aria-hidden="true"
           className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"

@@ -4,7 +4,10 @@ import Footer from "./footer/Footer";
 export default function Contact() {
   return (
     <>
-      <section className="grid grid-cols-1 gap-8 bg-slate-500 py-24 text-white md:grid-cols-2">
+      <section
+        className="grid grid-cols-1 gap-8 bg-slate-500 py-24 text-white md:grid-cols-2"
+        id="contact"
+      >
         <div className="flex flex-col items-center justify-center">
           <div className="text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl">
             <FlipLink href="#">Let's</FlipLink>
