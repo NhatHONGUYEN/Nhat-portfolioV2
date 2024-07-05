@@ -1,46 +1,13 @@
+import FlipLink from "../animation/FlipLink";
+
 export default function Contact() {
   return (
-    <div className="bg-white py-24 sm:py-32" id="contact">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 2xl:text-5xl">
-                Get in touch
-              </h2>
-              <p className="mt-4 leading-7 text-gray-600 2xl:text-xl">
-                Si vous voulez en savoir plus!
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-              <div className="rounded-2xl bg-gray-50 p-10">
-                <h3 className="text-base font-semibold leading-7 text-gray-900 2xl:text-xl">
-                  Nhat-Quan HO NGUYEN
-                </h3>
-                <dl className="mt-3 space-y-1 text-sm leading-6 text-gray-600 2xl:text-xl">
-                  <div>
-                    <dt className="sr-only">Email</dt>
-                    <dd>
-                      <a
-                        className="font-semibold text-indigo-600 2xl:text-xl"
-                        href="mailto:hnnhat67@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        hnnhat67@gmail.com
-                      </a>
-                    </dd>
-                  </div>
-                  <div className="mt-1 2xl:text-xl">
-                    <dt className="sr-only ">Phone number</dt>
-                    <dd style={{ letterSpacing: "-2px" }}>07 69 57 74 67</dd>
-                  </div>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="grid grid-cols-2 gap-2 bg-slate-500 px-8 py-24 text-white">
+      <div className="text-4xl font-black uppercase sm:text-7xl md:text-8xl lg:text-9xl">
+        <FlipLink href="#">Let's</FlipLink>
+        <FlipLink href="#">Work</FlipLink>
+        <FlipLink href="#">Together</FlipLink>
       </div>
-    </div>
+    </section>
   );
 }
