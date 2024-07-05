@@ -1,12 +1,22 @@
+import { FaHtml5, FaReact } from "react-icons/fa";
 import InfiniteText from "../animation/InfiniteText";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 export default function Introduction() {
+  const icons = [
+    { id: 1, icon: <FaHtml5 />, label: "HTML" },
+    { id: 2, icon: <FaReact />, label: "React JS" },
+    { id: 4, icon: <RiTailwindCssFill />, label: "Tailwind Css" },
+    { id: 3, icon: <TbBrandFramerMotion />, label: "Framer Motion" },
+  ];
+
   return (
     <div className="relative h-screen w-full overflow-hidden">
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-slate-700 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mx-auto max-w-2xl  lg:mx-0">
             <div className=" hidden text-white sm:mt-32 sm:flex lg:mt-16">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +24,7 @@ export default function Introduction() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6"
+                className="size-6 transition-transform duration-300 hover:translate-x-4 hover:translate-y-4 hover:scale-125"
               >
                 <path
                   strokeLinecap="round"
@@ -30,34 +40,23 @@ export default function Introduction() {
 
               <div className="mx-auto mt-10 flex flex-col items-center gap-y-4 md:flex-row md:gap-x-6 md:gap-y-0">
                 <a
-                  className="group relative inline-flex items-center overflow-hidden rounded bg-slate-200 px-8 py-3 font-bold text-slate-950 focus:outline-none focus:ring active:bg-slate-200"
+                  className="group relative inline-flex  items-center overflow-hidden  py-3 text-3xl font-bold text-slate-950  "
                   href="#"
                 >
-                  <span className="absolute -start-full transition-all group-hover:start-4">
-                    <svg
-                      className="size-5 rtl:rotate-180"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </span>
-
-                  <span className="text-sm font-medium transition-all group-hover:ms-4">
-                    {" "}
-                    Check Stack{" "}
-                  </span>
+                  <div className="flex items-center justify-center space-x-4  ">
+                    {icons.map((item) => (
+                      <div
+                        className="flex flex-col items-center transition-transform duration-300 group-hover:rotate-180 "
+                        key={item.id}
+                      >
+                        {item.icon}
+                      </div>
+                    ))}
+                  </div>
                 </a>
 
                 <a
-                  className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 font-bold text-slate-200 focus:outline-none focus:ring active:text-slate-200"
+                  className="group relative inline-flex items-center overflow-hidden rounded bg-slate-200 px-8 py-3 font-bold text-slate-950 focus:outline-none focus:ring active:bg-slate-200"
                   href="#"
                 >
                   <span className="absolute -start-full transition-all group-hover:start-4">
