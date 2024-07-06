@@ -7,7 +7,10 @@ export default function Projects() {
   const [hoveredImage, setHoveredImage] = useState(null);
 
   return (
-    <div className="relative mx-auto flex h-full w-full items-center justify-between bg-slate-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] px-4 sm:px-6  lg:px-80 lg:py-40">
+    <div
+      className="relative mx-auto flex h-full w-full items-center justify-between bg-slate-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] px-4 sm:px-6  lg:px-80 lg:py-40"
+      id="work"
+    >
       <div className="hidden lg:block">
         {hoveredImage && (
           <img

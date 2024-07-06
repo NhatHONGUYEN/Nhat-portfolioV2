@@ -12,7 +12,10 @@ export default function Introduction() {
   ];
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div
+      className="relative  h-screen w-full overflow-hidden"
+      id="introduction"
+    >
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-slate-700 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">

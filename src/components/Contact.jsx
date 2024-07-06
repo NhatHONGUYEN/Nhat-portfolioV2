@@ -19,13 +19,13 @@ export default function Contact() {
           <div className="flex flex-col text-lg md:text-2xl lg:text-3xl">
             <a
               href="mailto:hnnhat67@gmail.com"
-              className="hover:text-beige mb-4 max-w-md rounded-full border-2 p-8 text-center transition-all duration-300 hover:rotate-6 md:mb-8"
+              className="hover:text-beige  mb-4 max-w-md rounded-full border-2 p-8 text-center transition-all duration-300 hover:rotate-6 md:mb-8"
             >
               hnnhat67@gmail.com
             </a>
             <a
               href="tel:0769577467"
-              className="hover:text-beige max-w-md rounded-full border-2 p-8 text-center transition-all duration-300 hover:rotate-6"
+              className="hover:text-beige  max-w-md rounded-full border-2 p-8 text-center transition-all duration-300 hover:rotate-6"
             >
               07 69 57 74 67
             </a>
