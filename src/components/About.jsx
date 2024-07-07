@@ -8,7 +8,7 @@ export default function About() {
         muted
         className="absolute h-full w-full object-cover"
       >
-        <source src="/introvideoshort2.mp4" type="video/mp4" />
+        <source src="../../public/Introvideoshort2.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay absolute h-full w-full bg-black bg-opacity-60"></div>
       <div className="hero-content">

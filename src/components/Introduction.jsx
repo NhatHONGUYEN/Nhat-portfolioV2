@@ -17,17 +17,17 @@ export default function Introduction() {
       id="introduction"
     >
       <div className="absolute top-0 z-[-2] h-screen w-screen bg-slate-700 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+      <div className="lg:grid-cols-16 mx-auto max-w-7xl lg:grid lg:gap-x-8 lg:px-8">
         <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-48 xl:col-span-6">
-          <div className="mx-auto max-w-2xl  lg:mx-0">
-            <div className=" hidden text-white sm:mt-32 sm:flex lg:mt-16">
+          <div className="   max-w-md">
+            <div className=" hidden text-white sm:mt-32 sm:flex lg:mt-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-6 transition-transform duration-300 hover:translate-x-4 hover:translate-y-4 hover:scale-125"
+                className="size-9 transition-transform duration-300 hover:translate-x-4 hover:translate-y-4 hover:scale-125"
               >
                 <path
                   strokeLinecap="round"
@@ -36,8 +36,8 @@ export default function Introduction() {
                 />
               </svg>
             </div>
-            <div className="ml-10">
-              <h1 className="mt-24  text-4xl tracking-normal text-slate-50 sm:mt-10 sm:text-3xl">
+            <div className="ml-20">
+              <h1 className="mt-24  text-4xl tracking-normal text-slate-50 sm:mt-10 sm:text-5xl">
                 Développeur Front-End
               </h1>
 
