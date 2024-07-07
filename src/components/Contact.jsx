@@ -22,7 +22,7 @@ export default function Contact() {
           <div className="flex flex-col text-lg  lg:text-xl">
             <a
               href="mailto:hnnhat67@gmail.com"
-              className="hover:text-beige  mb-4  max-w-md rounded-full bg-slate-50 p-3  text-center transition-all duration-300 hover:bg-slate-800 hover:text-white md:mb-8 lg:p-8"
+              className="hover:text-beige mb-4 max-w-md  rounded-full bg-slate-50 p-3 text-center   transition-all duration-300 hover:bg-slate-800 hover:text-white md:mb-8 lg:p-8"
             >
               hnnhat67@gmail.com
             </a>

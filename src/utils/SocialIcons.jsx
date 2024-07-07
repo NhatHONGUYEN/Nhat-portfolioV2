@@ -1,4 +1,4 @@
-const Navigation = [
+const SocialIcons = [
   {
     name: "Instagram",
     href: "https://www.instagram.com/nhatflux/",
@@ -32,4 +32,4 @@ const Navigation = [
   },
 ];
 
-export { Navigation };
+export { SocialIcons };
