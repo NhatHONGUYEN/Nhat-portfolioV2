@@ -1,11 +1,10 @@
-import { useRef, useState } from "react";
-import Burger from "./Burger";
-import Menu from "./Menu";
+import { useState } from "react";
 import { Link } from "react-scroll";
+import ScrollLink from "../../animation/ScrollLink";
+import BurgerNav from "./BurgerNav";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const node = useRef();
 
   return (
     <div className="  fixed  z-50 flex h-[50px]  w-full  items-center justify-between bg-white p-4  shadow-sm 2xl:h-[80px]   ">
@@ -20,70 +19,21 @@ export default function Navbar() {
         NhAT
       </Link>
       <div className="hidden md:block 2xl:text-xl">
-        <Link
-          to="introduction"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="mx-4 cursor-pointer  duration-500 hover:text-indigo-600"
-        >
+        <ScrollLink to="introduction" offset={50} duration={500}>
           Home
-        </Link>
-        <Link
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="mx-4  cursor-pointer duration-500 hover:text-indigo-600"
-        >
+        </ScrollLink>
+        <ScrollLink to="about" offset={50} duration={500}>
           About
-        </Link>
-        <Link
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="mx-4 cursor-pointer duration-500 hover:text-indigo-600"
-        >
+        </ScrollLink>
+        <ScrollLink to="projects" offset={50} duration={500}>
           Projects
-        </Link>
-        <Link
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-          className="mx-4 cursor-pointer duration-500 hover:text-indigo-600"
-        >
+        </ScrollLink>
+        <ScrollLink to="contact" offset={50} duration={500}>
           Contact
-        </Link>
+        </ScrollLink>
       </div>
-      <div ref={node} className="block md:hidden ">
-        <Burger open={open} setOpen={setOpen} />
-        <Menu open={open} setOpen={setOpen}>
-          <div className="mt-4 flex flex-col">
-            <Link
-              to="introduction"
-              className="mx-4"
-              onClick={() => setOpen(false)}
-            >
-              Home
-            </Link>
-            <Link to="about" className="mx-4" onClick={() => setOpen(false)}>
-              About
-            </Link>
-            <Link to="projects" className="mx-4" onClick={() => setOpen(false)}>
-              Projects
-            </Link>
-            <Link to="contact" className="mx-4" onClick={() => setOpen(false)}>
-              Contact
-            </Link>
-          </div>
-        </Menu>
-      </div>
+      {/* BURGER MENU */}
+      <BurgerNav open={open} setOpen={setOpen} />
     </div>
   );
 }

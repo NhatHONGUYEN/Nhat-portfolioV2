@@ -1,29 +1,32 @@
+import { motion } from "framer-motion";
 export default function About() {
   return (
-    <div className="relative bg-gray-900" id="about">
-      <div className="relative h-80 overflow-hidden pt-8 md:absolute  md:left-0 md:h-full md:w-1/3 md:pt-0 lg:w-1/2">
-        <img
-          className="h-full w-full object-contain"
-          src="/photo-profil.jpg"
-          alt=""
-        />
-      </div>
-      <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base font-semibold leading-7 text-indigo-400">
-            ABOUT ME
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Front-end Développeur basé sur Paris , France
-          </p>
-          <p className="mt-6 text-base leading-7 text-gray-300">
+    <div id="about" className="hero  relative min-h-screen">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute h-full w-full object-cover"
+      >
+        <source src="../../public/Introvideoshort2.mp4" type="video/mp4" />
+      </video>
+      <div className="hero-overlay absolute h-full w-full bg-black bg-opacity-60"></div>
+      <div className="hero-content">
+        <motion.div
+          className="max-w-4xl text-slate-50"
+          initial={{ filter: "blur(10px)", opacity: 0 }}
+          whileInView={{ filter: "blur(0px)", opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="mb-10 text-7xl font-bold tracking-wide">About Me</h1>
+          <p className="mb-5 text-3xl">
             En reconversion professionnelle, je suis passionné par le
             développement front-end et motivé pour apprendre et maîtriser les
-            technologies web telles que HTML, CSS, JavaScript et React. Je suis
-            ouvert aux opportunités de collaboration et de travail sur des
-            projets épanouissants. Contactez-moi pour discuter de vos idées.
+            technologies web. Je suis ouvert aux opportunités de collaboration
+            et de travail sur des projets épanouissants. <br /> Contactez-moi
+            pour discuter de vos idées.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

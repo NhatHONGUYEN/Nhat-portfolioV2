@@ -1,54 +1,52 @@
+import { useState } from "react";
 import { Features } from "./Features";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
-  return (
-    <div className="bg-white" id="projects">
-      <div className="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
-        <div className="mx-auto max-w-2xl px-4 lg:max-w-none">
-          <div className="max-w-3xl">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Projects
-            </p>
-            <p className="mt-4 text-gray-500">
-              Voici une liste de petit projet que j'ai réalisé. Ils ne sont pas
-              finalisé mais mon permis chacun de développer une compétence en
-              particulier.
-            </p>
-          </div>
+  const [hoveredImage, setHoveredImage] = useState(null);
 
-          <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
-            {Features.map((feature) => (
-              <div
-                key={feature.name}
-                className="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8"
+  return (
+    <div
+      className="relative mx-auto flex h-full w-full items-center justify-between bg-slate-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] px-4 sm:px-6  lg:px-80 lg:py-40"
+      id="work"
+    >
+      <div className="hidden lg:block">
+        {hoveredImage && (
+          <img
+            src={hoveredImage}
+            alt="Project"
+            className="h-[500px] w-[500px] object-cover transition-transform duration-300 hover:rotate-12 hover:scale-125"
+          />
+        )}
+      </div>
+      <div className="mt-10  font-extrabold text-white md:mt-0">
+        <h3 className="rounded-full border-2 p-10 text-9xl">Work</h3>
+        <ul role="list" className="mt-6 space-y-4 text-5xl">
+          {Features.map((feature, index) => (
+            <Link
+              to={feature.link}
+              key={feature.id}
+              onMouseEnter={() => setHoveredImage(feature.image)}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2, duration: 0.7 }}
               >
-                <div className="mt-6 lg:col-span-5 lg:mt-0 xl:col-span-4">
-                  <h3 className="text-lg font-medium text-gray-900">
-                    {feature.name}
-                  </h3>
-                  <p className="mt-2 text-sm text-gray-500">
-                    {feature.description}
-                  </p>
-                </div>
-                <div className="flex-auto lg:col-span-7 xl:col-span-8">
-                  <a
-                    href={feature.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="aspect-h-2 aspect-w-5 cursor-pointer overflow-hidden rounded-lg bg-gray-100">
-                      <img
-                        src={feature.imageSrc}
-                        alt={feature.imageAlt}
-                        className=" object-cover object-center"
-                      />
-                    </div>
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+                <motion.h3
+                  className="mt-16 border-b border-white py-10"
+                  whileHover={{ translateX: 40 }}
+                  transition={{ duration: 0.8 }}
+                >
+                  {feature.name}
+                </motion.h3>
+              </motion.div>
+            </Link>
+          ))}
+        </ul>
       </div>
     </div>
   );
