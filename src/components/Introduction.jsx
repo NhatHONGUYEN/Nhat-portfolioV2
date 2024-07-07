@@ -37,7 +37,7 @@ export default function Introduction() {
               </svg>
             </div>
             <div className="ml-10">
-              <h1 className="mt-24 text-4xl font-bold tracking-tight text-slate-50 sm:mt-10 sm:text-3xl">
+              <h1 className="mt-24  text-4xl tracking-normal text-slate-50 sm:mt-10 sm:text-3xl">
                 Développeur Front-End
               </h1>
 

@@ -21,12 +21,14 @@ export default function BurgerMenu({ isMenuOpen, handleMenuToggle }) {
         <div className="absolute left-10 top-4 h-8 w-8 rounded-full bg-black"></div>
         <div className="absolute left-16 top-4 h-8 w-8 rounded-full bg-black"></div>
         <BurgerCloseButton handleMenuToggle={handleMenuToggle} />
-        <LinksBurger handleMenuToggle={handleMenuToggle} />
-        <div className="flex items-center justify-between p-10 text-slate-400">
-          <div className="rotate-90 transform">
-            <GrBottomCorner />
+        <div className="w-full  text-slate-400">
+          <LinksBurger handleMenuToggle={handleMenuToggle} />
+          <div className="flex items-center justify-between p-10 text-slate-400">
+            <div className="rotate-90 transform">
+              <GrBottomCorner />
+            </div>
+            <IconFooter />
           </div>
-          <IconFooter />
         </div>
       </div>
     </>

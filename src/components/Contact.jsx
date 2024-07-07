@@ -1,11 +1,11 @@
 import FlipLink from "../animation/FlipLink";
-import Footer from "./footer/Footer";
+import { SocialIcons } from "../utils/SocialIcons";
 
 export default function Contact() {
   return (
     <>
       <section
-        className="grid grid-cols-1 gap-8 bg-slate-500 py-24  md:grid-cols-2"
+        className="grid grid-cols-1 gap-8 bg-slate-500 py-24 md:grid-cols-2"
         id="contact"
       >
         <div className="flex flex-col items-center justify-center text-white">
@@ -15,27 +15,31 @@ export default function Contact() {
             <FlipLink href="#">Together</FlipLink>
           </div>
         </div>
-        <div
-          className="flex flex-col items-center
-         justify-center border-l-2"
-        >
-          <div className="flex flex-col text-lg  lg:text-xl">
-            <a
-              href="mailto:hnnhat67@gmail.com"
-              className="hover:text-beige mb-4 max-w-md  rounded-full bg-slate-50 p-3 text-center   transition-all duration-300 hover:bg-slate-800 hover:text-white md:mb-8 lg:p-8"
-            >
-              hnnhat67@gmail.com
-            </a>
-            <a
-              href="tel:0769577467"
-              className="hover:text-beige max-w-md  rounded-full bg-slate-50 p-3  text-center transition-all duration-300 hover:bg-slate-800 hover:text-white lg:p-8"
-            >
-              07 69 57 74 67
-            </a>
+        <div className=" border-l-2 pl-36 ">
+          <div className="grid max-w-3xl grid-cols-2 items-center">
+            <div className="flex flex-col text-left">
+              <h1 className=" mb-4 text-4xl font-bold">Contacts</h1>
+              <p className=" mb-4 text-xl ">hnnhat67@gmail.com</p>
+              <p className=" mb-4 text-xl ">+33 7 69577467</p>
+            </div>
+            <div className="text-left">
+              <h1 className=" mb-4 text-4xl font-bold">Socials</h1>
+              <div className="flex flex-col  ">
+                {SocialIcons.map((icon, index) => (
+                  <div key={index} className="mb-4 text-xl    ">
+                    <p>{icon.name}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 text-center md:order-1 md:mt-28 md:text-left">
+            <p className="text-xs leading-5  md:text-base lg:text-lg">
+              &copy; 2024 Nhat, Inc. All rights reserved.
+            </p>
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
