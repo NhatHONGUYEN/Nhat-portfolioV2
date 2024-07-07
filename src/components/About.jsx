@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 export default function About() {
   return (
-    <div className="hero relative min-h-screen">
+    <div id="about" className="hero  relative min-h-screen">
       <video
         autoPlay
         loop

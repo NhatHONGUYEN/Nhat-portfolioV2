@@ -32,10 +32,14 @@ export default function NavBar() {
         <a className="btn btn-ghost text-xl">Nhat</a>
         <div className="flex justify-center">
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
-            <a className="btn btn-ghost text-xl">About</a>
+            <a className="mr-4 transform cursor-pointer text-xl transition-transform duration-300 hover:text-slate-950">
+              About
+            </a>
           </Link>
           <Link to="work" spy={true} smooth={true} offset={50} duration={500}>
-            <a className="btn btn-ghost text-xl">Work</a>
+            <a className="mr-4 transform cursor-pointer text-xl transition-transform duration-300 hover:text-slate-950">
+              Work
+            </a>
           </Link>
           <Link
             to="contact"
@@ -44,7 +48,9 @@ export default function NavBar() {
             offset={50}
             duration={500}
           >
-            <a className="btn btn-ghost text-xl">Contact</a>
+            <a className="mr-4 transform cursor-pointer text-xl transition-transform duration-300 hover:text-slate-950">
+              Contact
+            </a>
           </Link>
         </div>
         <div></div>
@@ -52,6 +58,7 @@ export default function NavBar() {
           <BurgerMenu
             isMenuOpen={isMenuOpen}
             handleMenuToggle={handleMenuToggle}
+            className="fixed right-0 top-0"
           />
         )}
       </div>

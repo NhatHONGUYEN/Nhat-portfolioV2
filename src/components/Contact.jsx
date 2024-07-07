@@ -19,15 +19,34 @@ export default function Contact() {
           <div className="grid max-w-3xl grid-cols-2 items-center">
             <div className="flex flex-col text-left">
               <h1 className=" mb-4 text-4xl font-bold">Contacts</h1>
-              <p className=" mb-4 text-xl ">hnnhat67@gmail.com</p>
-              <p className=" mb-4 text-xl ">+33 7 69577467</p>
+              <a
+                href="mailto:hnnhat67@gmail.com"
+                className=" mb-4 text-xl hover:text-slate-200 "
+              >
+                hnnhat67@gmail.com
+              </a>
+              <a
+                href="tel:0769577467"
+                className=" mb-4 text-xl hover:text-slate-200 "
+              >
+                +33 7 69577467
+              </a>
             </div>
             <div className="text-left">
               <h1 className=" mb-4 text-4xl font-bold">Socials</h1>
-              <div className="flex flex-col  ">
+              <div className="flex flex-col">
                 {SocialIcons.map((icon, index) => (
-                  <div key={index} className="mb-4 text-xl    ">
-                    <p>{icon.name}</p>
+                  <div
+                    key={index}
+                    className="mb-4 text-xl hover:text-slate-200"
+                  >
+                    <a
+                      href={icon.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <p>{icon.name}</p>
+                    </a>
                   </div>
                 ))}
               </div>

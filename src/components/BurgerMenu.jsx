@@ -4,10 +4,15 @@ import BurgerButton from "./navbar/BurgerButton.jsx";
 import LinksBurger from "./navbar/LinksBurger.jsx";
 import IconFooter from "../reusable ui/IconFooter.jsx";
 import BurgerCloseButton from "../reusable ui/BurgerCloseButton.jsx";
+import { motion } from "framer-motion";
 
 export default function BurgerMenu({ isMenuOpen, handleMenuToggle }) {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       {!isMenuOpen && (
         <div className="fixed right-10 top-10 z-50">
           <BurgerButton handleMenuToggle={handleMenuToggle} />
@@ -31,7 +36,7 @@ export default function BurgerMenu({ isMenuOpen, handleMenuToggle }) {
           </div>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 
